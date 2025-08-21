@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife Tours</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f9f4;
+      color: #333;
+    }
+    header {
+      background: #2d572c;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.3rem;
+      color: #2d572c;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #2d572c;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1e3e1d;
+    }
+    footer {
+      background: #2d572c;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wildlife Adventure Tours</h1>
+    <p>Explore the wild like never before</p>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?safari,lion" alt="Safari Tour">
+      <div class="card-content">
+        <h3>African Safari</h3>
+        <p>Experience the majestic lions, elephants, and giraffes in the heart of Africa.</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?tiger,jungle" alt="Tiger Tour">
+      <div class="card-content">
+        <h3>Jungle Tiger Trek</h3>
+        <p>Track the elusive Bengal tiger in lush green forests with expert guides.</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?polar-bear,arctic" alt="Arctic Tour">
+      <div class="card-content">
+        <h3>Arctic Expedition</h3>
+        <p>Witness polar bears, seals, and icy landscapes on a once-in-a-lifetime adventure.</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://source.unsplash.com/400x300/?rainforest,monkey" alt="Rainforest Tour">
+      <div class="card-content">
+        <h3>Amazon Rainforest</h3>
+        <p>Explore exotic biodiversity deep in the Amazon with guided tours and river cruises.</p>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Wildlife Adventure Tours | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
